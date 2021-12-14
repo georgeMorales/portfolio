@@ -16,3 +16,12 @@
     background-color: lightgray;
     justify-content: center;
 }
+
+#nprogress .bar {
+    background: tomato !important;
+}
+
+#nprogress .spinner-icon {
+    border-top-color: tomato;
+    border-left-color: tomato;
+}
