@@ -8,7 +8,7 @@ import Link from 'next/link'
 const Index: NextPage = () => {
 
     return (
-        <Layout isFooter={true}>
+        <Layout>
             <header className="container">
                 <div className="col-md-12">
                     <div className="card card-body bg-secundary">
@@ -84,9 +84,9 @@ const Index: NextPage = () => {
                                     {projects.map(({title, description, image}, i) => (
                                         <div className="col-md-4" key={i}>
                                             <div className="card">
-                                                <div>
-                                                    <Image priority src={`/${image}`} alt="portfolio1" width={1000} height={600} layout="responsive" className="card-img-top" />
-                                                </div>
+
+                                                <Image src={`/${image}`} alt="portfolio1" width={200} height={200} className="card-img-top" />
+                                               
                                                 <div className="card-body">
                                                     <h3>{title}</h3>
                                                     <p>{description}</p>

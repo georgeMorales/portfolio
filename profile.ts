@@ -50,7 +50,7 @@ export const projects = [
     {
         title: "title",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio",
-        image: "portfolio1.jpeg"
+        image: "portfolio1.jpg"
     },
     {
         title: "title",
@@ -76,5 +76,13 @@ export const projects = [
         title: "title",
         description: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio",
         image: "portfolio6.jpeg"
+    }
+]
+
+export const posts = [
+    {
+        title: "React",
+        content: "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio, doloremque. Incidunt cum sed excepturi, tempore optio sit in dolor temporibus quo facilis ducimus nostrum eligendi consequuntur beatae tempora ad voluptatum.",
+        imageURL: "reactluminoso.png"
     }
 ]

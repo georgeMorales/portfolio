@@ -5,11 +5,12 @@ import Head from 'next/head'
 import NProgress from 'nprogress'
 
 interface props {
-    children: JSX.Element | JSX.Element[]
+    children: JSX.Element | JSX.Element[],
+    isFooter: boolean
 }
 
 
-export default function Layout({children}: props) {
+export default function Layout({children, isFooter = true}: props) {
 
     const router = useRouter()
     
@@ -40,15 +41,18 @@ export default function Layout({children}: props) {
                 {children}
             </main>
             
-            <div className="footer">
-                <footer className="bg text-center">
-                    <div className="container p-4">
-                        <h1>&copy; Jorge Morales Portfolio</h1>
-                        <p>2000 - {new Date().getFullYear()}</p>
-                        <p>All rigth Reserved.</p>
-                    </div>
-                </footer>
-            </div>
+            {isFooter && 
+                <div className="footer">
+                    <footer className="bg text-center">
+                        <div className="container p-4">
+                            <h1>&copy; Jorge Morales Portfolio</h1>
+                            <p>2000 - {new Date().getFullYear()}</p>
+                            <p>All rigth Reserved.</p>
+                        </div>
+                    </footer>
+                </div>
+            }
+            
             
             
         </>
